@@ -77,9 +77,7 @@
 <h2 class="dialog-header"> Add New Appointment </h2>
 <form class="form" id="form" style="overflow: scroll; padding-left: 10px;">
 <div class='"form-container" align="center"' style="margin-top: 20px;">
-<label class="form-label" id="valueFromMyButton" for="name"> email</label>
-<input class="input" type="text" id="name" maxlength="36">
-<label class="form-label" id="valueFromMyButton" for="name"> first name</label>
+<label class="form-label" id="valueFromMyButton" for="name">  name</label>
 <input class="input" type="text" id="name" maxlength="36">
 <label class="form-label" id="valueFromMyButton" for="service"> Service</label>
 <br>
@@ -89,9 +87,12 @@
     <option value="Waxing">Waxing</option>
     <option value="Tips">Tips</option>
 </select>
-<br>
-<br>
 
+<br>
+<br>
+<label class="form-label" id="valueFromMyButton" for="time">Time</label>
+<input class="input" type="time" id="time" min="07:00" max="18:50" required
+pattern="[0-9]{2}:[0-9]{2}">
 
 <input type="button" value="Cancel" class="button" id="cancel-button">
 <input type="button" value="OK" class="button button-white" id="ok-button">
